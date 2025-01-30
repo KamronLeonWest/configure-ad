@@ -24,10 +24,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create a Resource Group, Virtual Machine, and Subnet on Azure
+- Create Domain Controller Virtual Machine on Windows Server 2022, and Client Virtual Machine on Windows 10
+- Set Client's DNS Settings to Domain Controller's Private IP address
+- Install Active Directory Domain Services on the Domain Controller Virtual Machine
+- Create Organizational Units
+- Join Client Virtual Machine to the Domain
+- Setup Remote Desktop for non-administrative users on Client Virtual Machine
 
 <h2>Deployment and Configuration Steps</h2>
 
