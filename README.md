@@ -177,9 +177,25 @@ On the window that is prompted, click 'Change.' Change the 'Member of' settings 
 Following this, you will be prompted to confirm the changes. Use the user admin log in made earlier (for me, I used Jane Doe).
 </p>
 <p align="center">
-<img src="https://imgur.com/jJnSBMB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/zWzJN7F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Active Directory is now configured! You can log into the server using the user admin settings. As well, you can create employees to log into the client.
+After finalizing the last prompt, Select 'Remote Desktop' on the settings window that should still be open.
+</p>
+<p align="center">
+<img src="https://imgur.com/R2YcBvv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Click 'Select users that can remotely access this PC.' When creating employees as an admin or on the Windows Server/Domain controller, the username and password settings configured will allow them privileges as clients to the server.
+</p>
+<p align="center">
+<img src="https://imgur.com/vLqn7jJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+There should be a window that opens, where you will select 'Add.' Type in 'domain users,' click 'Check Names,' then select 'OK.' 
 </p>
 <br />
+
+<p align="center">
+Congradulations! If youfollowed each step correctly, you have now successfuly configured Active Directory!
+</p>
