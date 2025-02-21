@@ -197,5 +197,5 @@ There should be a window that opens, where you will select 'Add.' Type in 'domai
 <br />
 
 <p align="center">
-Congradulations! If youfollowed each step correctly, you have now successfuly configured Active Directory!
+Congradulations! If you followed each step correctly, you have now successfuly configured Active Directory!
 </p>
