@@ -100,37 +100,37 @@ On the page that opens, click 'Add roles and features'
 <img src="https://imgur.com/SSQmG9K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On the page that opens, click 'Add roles and features'
+Click next on the prompted window until you reach the 'Server Roles' tab, and select 'Active Directory Domain Services.'
 </p>
 <p>
 <img src="https://imgur.com/vlnwhRN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Finalize that window, then click the flag in the top right corner. Select 'Promote this server to a domain controller.'
 </p>
 <p align="center">
 <img src="https://imgur.com/D4uEHkF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On this window, click 'Add a new forest,' then create your root domain name. I used 'mydomain.com'
 </p>
 <p align="center">
 <img src="https://imgur.com/0kBerQg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On the next tab, the password here is not important so set this to anything. This password is rarely used, so you could make it something simple like 'password'
 </p>
 <p align="center">
 <img src="https://imgur.com/KI8v1l9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Finalize the configuration wizard, then navigate to the Start menu. Under 'Windows Administrative Tools,' select 'Active Directory Users and Computers.'
 </p>
 <p align="center">
 <img src="https://imgur.com/yyLXJdH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On this window, right-click your root domain name (for me, it is mydomain.com), select 'New,' and click 'Organizational Unit.' This is where you will create a folder to categorize administrators and employees. I like to begin the name with an underscore so these folders are not confused with the other folders, and they are at the top of the page.
 </p>
 <br />
 
@@ -138,48 +138,48 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://imgur.com/I1nsB1A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+With your 'Admins' folder selected, right click and navigate to 'New', then create a user admin. You can configure the privileges on the window that opens. You can set tge password to anything but for practicality, you can set the password to the same password as the Windows Server VM's password. I create a basic user under the name 'Jane Doe' just for demonstration.
 </p>
 <p align="center">
 <img src="https://imgur.com/dge8kut.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once the user admin is created, right click on the user and select 'Properties'
 </p>
 <p align="center">
 <img src="https://imgur.com/VZLdxMa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On the 'Member of' tab of the window that opens, select 'Add.'
 </p>
 <p align="center">
 <img src="https://imgur.com/qF7fnDZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Type in 'domain admins,' click 'Check Names,' then click 'OK.'
 </p>
 <p align="center">
 <img src="https://imgur.com/k7iBjrW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After this, log into the Windows 10 VM. Open the settings menu by navigating to the start menu, then either typing in Settings or check to see if it is already listed in one of the quick links. Open the 'About' tab, then click 'Rename this PC (advanced).' 
 </p>
 <p align="center">
 <img src="https://imgur.com/ATVxDix.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On the window that is prompted, click 'Change.' Change the 'Member of' settings to the root domain name made earlier (for me, it is 'mydomain.com'). 
 </p>
 <p align="center">
 <img src="https://imgur.com/ykofkWZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Following this, you will be prompted to confirm the changes. Use the user admin log in made earlier (for me, I used Jane Doe).
 </p>
 <p align="center">
 <img src="https://imgur.com/jJnSBMB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Active Directory is now configured! You can log into the server using the user admin settings. As well, you can create employees to log into the client.
 </p>
 <br />
