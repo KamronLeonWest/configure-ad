@@ -102,7 +102,7 @@ On the page that opens, click 'Add roles and features'
 <p>
 Click next on the prompted window until you reach the 'Server Roles' tab, and select 'Active Directory Domain Services.'
 </p>
-<p>
+<p align="center">
 <img src="https://imgur.com/vlnwhRN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
